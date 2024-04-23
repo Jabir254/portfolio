@@ -18,3 +18,13 @@ function printCoord(pt) {
     console.log("The coordinate of y is " + pt.y);
 }
 printCoord({ x: 4, y: 9 });
+function printId(id) {
+    if (typeof id === "string") {
+        console.log(id.toUpperCase());
+    }
+    else {
+        console.log(id);
+    }
+}
+printId(34);
+printId("welcome");
