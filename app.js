@@ -5,7 +5,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("layouts/main");
+  res.render("layouts/index");
 });
 
 app.use(handlers);
