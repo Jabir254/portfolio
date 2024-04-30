@@ -1,1 +1,3 @@
-export.notFound = (req, res) => res.render("404");
+const notFound = (req, res) => res.render("404");
+
+module.exports = notFound;

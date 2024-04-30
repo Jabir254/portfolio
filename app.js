@@ -1,15 +1,14 @@
 const express = require("express");
+const handlers = require("./handlers.js");
 
 const app = express();
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
-app.get('/', (req, res) => {
-  res.render('layouts/main')
-})
+app.get("/", (req, res) => {
+  res.render("layouts/main");
+});
 
-app.get('/404', (req, res) => {
-  res.render("views/404")
-})
+app.use(handlers);
 
 const PORT = process.env.PORT || 3000;
 
