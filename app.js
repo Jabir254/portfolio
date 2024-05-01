@@ -9,6 +9,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => {
   res.render("layouts/index");
 });
+app.get("/home", (req, res) => {
+  res.render("components/home");
+});
 
 app.use(handlers);
 
